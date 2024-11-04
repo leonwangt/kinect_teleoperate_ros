@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wl,--as-needed,-rpath-link=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros -rdynamic "CMakeFiles/test-bson.dir/src/unit-bson.cpp.o" CMakeFiles/doctest_main.dir/src/unit.cpp.o -o ../../../teleoperate_ros/test-bson  -Wl,-rpath,"\$ORIGIN"

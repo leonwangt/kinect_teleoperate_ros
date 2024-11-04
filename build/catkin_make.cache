@@ -1,0 +1,2 @@
+teleoperate_ros
+-DCATKIN_DEVEL_PREFIX=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/devel -DCMAKE_INSTALL_PREFIX=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/install -G Unix Makefiles
