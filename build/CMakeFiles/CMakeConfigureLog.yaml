@@ -61,21 +61,21 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-REgkIR"
-      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-REgkIR"
+      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PuT5GP"
+      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PuT5GP"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-REgkIR'
+        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PuT5GP'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5e8d3/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_5e8d3.dir/build.make CMakeFiles/cmTC_5e8d3.dir/build
-        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-REgkIR'
-        Building C object CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5e77c/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_5e77c.dir/build.make CMakeFiles/cmTC_5e77c.dir/build
+        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PuT5GP'
+        Building C object CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.31/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -84,8 +84,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccPoXZTb.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccT81ocq.s
         GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -105,14 +105,14 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o /tmp/ccPoXZTb.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o /tmp/ccT81ocq.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-        Linking C executable cmTC_5e8d3
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e8d3.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_5e77c
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e77c.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -124,14 +124,14 @@ events:
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5e8d3' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdVZpzB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5e8d3 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5e77c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUhc9tS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5e77c /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
         collect2 version 9.4.0
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdVZpzB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5e8d3 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUhc9tS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5e77c /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.34
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5e8d3' '-mtune=generic' '-march=x86-64'
-        /usr/bin/cc  -v -Wl,-v -rdynamic CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o -o cmTC_5e8d3
-        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-REgkIR'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5e77c' '-mtune=generic' '-march=x86-64'
+        /usr/bin/cc  -v -Wl,-v -rdynamic CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o -o cmTC_5e77c
+        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PuT5GP'
         
       exitCode: 0
   -
@@ -166,13 +166,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-REgkIR']
+        ignore line: [Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PuT5GP']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5e8d3/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_5e8d3.dir/build.make CMakeFiles/cmTC_5e8d3.dir/build]
-        ignore line: [make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-REgkIR']
-        ignore line: [Building C object CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5e77c/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_5e77c.dir/build.make CMakeFiles/cmTC_5e77c.dir/build]
+        ignore line: [make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PuT5GP']
+        ignore line: [Building C object CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -181,8 +181,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccPoXZTb.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccT81ocq.s]
         ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -202,14 +202,14 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o /tmp/ccPoXZTb.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o /tmp/ccT81ocq.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking C executable cmTC_5e8d3]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e8d3.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_5e77c]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e77c.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -221,13 +221,13 @@ events:
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5e8d3' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdVZpzB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5e8d3 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5e77c' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUhc9tS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5e77c /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccdVZpzB.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccUhc9tS.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -246,7 +246,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_5e8d3] ==> ignore
+          arg [cmTC_5e77c] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -259,7 +259,7 @@ events:
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -274,7 +274,7 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 9.4.0]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdVZpzB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5e8d3 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_5e8d3.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUhc9tS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5e77c /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_5e77c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'C': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -312,8 +312,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-y8IhmO"
-      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-y8IhmO"
+      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-J4v4iR"
+      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-J4v4iR"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -321,13 +321,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-y8IhmO'
+        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-J4v4iR'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9951e/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_9951e.dir/build.make CMakeFiles/cmTC_9951e.dir/build
-        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-y8IhmO'
-        Building CXX object CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8e529/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_8e529.dir/build.make CMakeFiles/cmTC_8e529.dir/build
+        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-J4v4iR'
+        Building CXX object CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -336,8 +336,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccQbc6kD.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccLG91vQ.s
         GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -361,14 +361,14 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccQbc6kD.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccLG91vQ.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        Linking CXX executable cmTC_9951e
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9951e.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_8e529
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e529.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -380,14 +380,14 @@ events:
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9951e' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cchCSqz5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9951e /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8e529' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc76GRnl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8e529 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
         collect2 version 9.4.0
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cchCSqz5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9951e /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc76GRnl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8e529 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.34
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9951e' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        /usr/bin/c++  -v -Wl,-v -rdynamic CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9951e
-        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-y8IhmO'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8e529' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        /usr/bin/c++  -v -Wl,-v -rdynamic CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8e529
+        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-J4v4iR'
         
       exitCode: 0
   -
@@ -428,13 +428,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-y8IhmO']
+        ignore line: [Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-J4v4iR']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9951e/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_9951e.dir/build.make CMakeFiles/cmTC_9951e.dir/build]
-        ignore line: [make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-y8IhmO']
-        ignore line: [Building CXX object CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8e529/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_8e529.dir/build.make CMakeFiles/cmTC_8e529.dir/build]
+        ignore line: [make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-J4v4iR']
+        ignore line: [Building CXX object CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -443,8 +443,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccQbc6kD.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccLG91vQ.s]
         ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -468,14 +468,14 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccQbc6kD.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccLG91vQ.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking CXX executable cmTC_9951e]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9951e.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_8e529]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e529.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -487,13 +487,13 @@ events:
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9951e' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cchCSqz5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9951e /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8e529' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc76GRnl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8e529 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cchCSqz5.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc76GRnl.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -512,7 +512,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_9951e] ==> ignore
+          arg [cmTC_8e529] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -525,7 +525,7 @@ events:
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -536,7 +536,7 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 9.4.0]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cchCSqz5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9951e /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_9951e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc76GRnl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8e529 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_8e529.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -578,33 +578,33 @@ events:
       - "/opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:20 (include)"
       - "CMakeLists.txt:58 (find_package)"
     directories:
-      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-uuUhZR"
-      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-uuUhZR"
+      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-CGIfiQ"
+      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-CGIfiQ"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-uuUhZR'
+        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-CGIfiQ'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5248d/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_5248d.dir/build.make CMakeFiles/cmTC_5248d.dir/build
-        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-uuUhZR'
-        Building C object CMakeFiles/cmTC_5248d.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_5248d.dir/src.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-uuUhZR/src.c
-        Linking C executable cmTC_5248d
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5248d.dir/link.txt --verbose=1
-        /usr/bin/ld: CMakeFiles/cmTC_5248d.dir/src.c.o: in function `main':
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0dd62/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_0dd62.dir/build.make CMakeFiles/cmTC_0dd62.dir/build
+        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-CGIfiQ'
+        Building C object CMakeFiles/cmTC_0dd62.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_0dd62.dir/src.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-CGIfiQ/src.c
+        Linking C executable cmTC_0dd62
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0dd62.dir/link.txt --verbose=1
+        /usr/bin/ld: CMakeFiles/cmTC_0dd62.dir/src.c.o: in function `main':
         src.c:(.text+0x46): undefined reference to `pthread_create'
         /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
         /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
         /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
         collect2: error: ld returned 1 exit status
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_5248d.dir/src.c.o -o cmTC_5248d
-        make[1]: *** [CMakeFiles/cmTC_5248d.dir/build.make:102: cmTC_5248d] Error 1
-        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-uuUhZR'
-        make: *** [Makefile:133: cmTC_5248d/fast] Error 2
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_0dd62.dir/src.c.o -o cmTC_0dd62
+        make[1]: *** [CMakeFiles/cmTC_0dd62.dir/build.make:102: cmTC_0dd62] Error 1
+        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-CGIfiQ'
+        make: *** [Makefile:133: cmTC_0dd62/fast] Error 2
         
       exitCode: 2
   -
@@ -619,29 +619,29 @@ events:
       - "/opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:20 (include)"
       - "CMakeLists.txt:58 (find_package)"
     directories:
-      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PJqlQP"
-      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PJqlQP"
+      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-fAeUXN"
+      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-fAeUXN"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PJqlQP'
+        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-fAeUXN'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6c12b/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_6c12b.dir/build.make CMakeFiles/cmTC_6c12b.dir/build
-        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PJqlQP'
-        Building C object CMakeFiles/cmTC_6c12b.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_6c12b.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PJqlQP/CheckFunctionExists.c
-        Linking C executable cmTC_6c12b
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c12b.dir/link.txt --verbose=1
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_203a7/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_203a7.dir/build.make CMakeFiles/cmTC_203a7.dir/build
+        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-fAeUXN'
+        Building C object CMakeFiles/cmTC_203a7.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_203a7.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-fAeUXN/CheckFunctionExists.c
+        Linking C executable cmTC_203a7
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_203a7.dir/link.txt --verbose=1
         /usr/bin/ld: cannot find -lpthreads
         collect2: error: ld returned 1 exit status
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_6c12b.dir/CheckFunctionExists.c.o -o cmTC_6c12b  -lpthreads
-        make[1]: *** [CMakeFiles/cmTC_6c12b.dir/build.make:102: cmTC_6c12b] Error 1
-        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PJqlQP'
-        make: *** [Makefile:133: cmTC_6c12b/fast] Error 2
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_203a7.dir/CheckFunctionExists.c.o -o cmTC_203a7  -lpthreads
+        make[1]: *** [CMakeFiles/cmTC_203a7.dir/build.make:102: cmTC_203a7] Error 1
+        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-fAeUXN'
+        make: *** [Makefile:133: cmTC_203a7/fast] Error 2
         
       exitCode: 2
   -
@@ -656,25 +656,25 @@ events:
       - "/opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:20 (include)"
       - "CMakeLists.txt:58 (find_package)"
     directories:
-      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-Tfut5O"
-      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-Tfut5O"
+      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-VSFDXR"
+      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-VSFDXR"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-Tfut5O'
+        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-VSFDXR'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ff8f9/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_ff8f9.dir/build.make CMakeFiles/cmTC_ff8f9.dir/build
-        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-Tfut5O'
-        Building C object CMakeFiles/cmTC_ff8f9.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_ff8f9.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-Tfut5O/CheckFunctionExists.c
-        Linking C executable cmTC_ff8f9
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff8f9.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_ff8f9.dir/CheckFunctionExists.c.o -o cmTC_ff8f9  -lpthread
-        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-Tfut5O'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ef229/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ef229.dir/build.make CMakeFiles/cmTC_ef229.dir/build
+        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-VSFDXR'
+        Building C object CMakeFiles/cmTC_ef229.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_ef229.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-VSFDXR/CheckFunctionExists.c
+        Linking C executable cmTC_ef229
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef229.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_ef229.dir/CheckFunctionExists.c.o -o cmTC_ef229  -lpthread
+        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-VSFDXR'
         
       exitCode: 0
   -
@@ -685,8 +685,8 @@ events:
     checks:
       - "Looking for memfd_create"
     directories:
-      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-dAThjO"
-      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-dAThjO"
+      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-cEQ4VN"
+      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-cEQ4VN"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -696,17 +696,17 @@ events:
       variable: "HAVE_MEMFD_CREATE"
       cached: true
       stdout: |
-        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-dAThjO'
+        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-cEQ4VN'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c3340/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_c3340.dir/build.make CMakeFiles/cmTC_c3340.dir/build
-        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-dAThjO'
-        Building C object CMakeFiles/cmTC_c3340.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memfd_create -std=gnu99 -o CMakeFiles/cmTC_c3340.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-dAThjO/CheckFunctionExists.c
-        Linking C executable cmTC_c3340
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3340.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memfd_create  -Wl,--as-needed,-rpath-link=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros  CMakeFiles/cmTC_c3340.dir/CheckFunctionExists.c.o -o cmTC_c3340
-        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-dAThjO'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_892c6/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_892c6.dir/build.make CMakeFiles/cmTC_892c6.dir/build
+        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-cEQ4VN'
+        Building C object CMakeFiles/cmTC_892c6.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memfd_create -std=gnu99 -o CMakeFiles/cmTC_892c6.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-cEQ4VN/CheckFunctionExists.c
+        Linking C executable cmTC_892c6
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_892c6.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memfd_create  -Wl,--as-needed,-rpath-link=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros  CMakeFiles/cmTC_892c6.dir/CheckFunctionExists.c.o -o cmTC_892c6
+        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-cEQ4VN'
         
       exitCode: 0
   -
@@ -718,8 +718,8 @@ events:
     checks:
       - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
     directories:
-      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-FWv5xR"
-      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-FWv5xR"
+      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-dp9w9Q"
+      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-dp9w9Q"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/src/teleoperate_ros/src/cmake;/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/src/teleoperate_ros/src/extern/glfw/src/CMake/modules"
@@ -727,17 +727,17 @@ events:
       variable: "X11_LIB_X11_SOLO"
       cached: true
       stdout: |
-        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-FWv5xR'
+        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-dp9w9Q'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ae5a0/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_ae5a0.dir/build.make CMakeFiles/cmTC_ae5a0.dir/build
-        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-FWv5xR'
-        Building C object CMakeFiles/cmTC_ae5a0.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_ae5a0.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-FWv5xR/CheckFunctionExists.c
-        Linking C executable cmTC_ae5a0
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae5a0.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay -rdynamic CMakeFiles/cmTC_ae5a0.dir/CheckFunctionExists.c.o -o cmTC_ae5a0  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so
-        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-FWv5xR'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d57f9/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_d57f9.dir/build.make CMakeFiles/cmTC_d57f9.dir/build
+        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-dp9w9Q'
+        Building C object CMakeFiles/cmTC_d57f9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_d57f9.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-dp9w9Q/CheckFunctionExists.c
+        Linking C executable cmTC_d57f9
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d57f9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay -rdynamic CMakeFiles/cmTC_d57f9.dir/CheckFunctionExists.c.o -o cmTC_d57f9  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so
+        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-dp9w9Q'
         
       exitCode: 0
   -
@@ -749,8 +749,8 @@ events:
     checks:
       - "Looking for gethostbyname"
     directories:
-      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-yptDyS"
-      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-yptDyS"
+      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-QNYf4O"
+      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-QNYf4O"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -760,17 +760,17 @@ events:
       variable: "CMAKE_HAVE_GETHOSTBYNAME"
       cached: true
       stdout: |
-        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-yptDyS'
+        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-QNYf4O'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c8f80/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_c8f80.dir/build.make CMakeFiles/cmTC_c8f80.dir/build
-        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-yptDyS'
-        Building C object CMakeFiles/cmTC_c8f80.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -std=gnu99 -o CMakeFiles/cmTC_c8f80.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-yptDyS/CheckFunctionExists.c
-        Linking C executable cmTC_c8f80
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8f80.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname  -Wl,--as-needed,-rpath-link=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros  CMakeFiles/cmTC_c8f80.dir/CheckFunctionExists.c.o -o cmTC_c8f80
-        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-yptDyS'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7c5e0/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_7c5e0.dir/build.make CMakeFiles/cmTC_7c5e0.dir/build
+        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-QNYf4O'
+        Building C object CMakeFiles/cmTC_7c5e0.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -std=gnu99 -o CMakeFiles/cmTC_7c5e0.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-QNYf4O/CheckFunctionExists.c
+        Linking C executable cmTC_7c5e0
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c5e0.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname  -Wl,--as-needed,-rpath-link=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros  CMakeFiles/cmTC_7c5e0.dir/CheckFunctionExists.c.o -o cmTC_7c5e0
+        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-QNYf4O'
         
       exitCode: 0
   -
@@ -782,8 +782,8 @@ events:
     checks:
       - "Looking for connect"
     directories:
-      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-Jf95QR"
-      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-Jf95QR"
+      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-b592FO"
+      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-b592FO"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -793,17 +793,17 @@ events:
       variable: "CMAKE_HAVE_CONNECT"
       cached: true
       stdout: |
-        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-Jf95QR'
+        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-b592FO'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bf0b8/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_bf0b8.dir/build.make CMakeFiles/cmTC_bf0b8.dir/build
-        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-Jf95QR'
-        Building C object CMakeFiles/cmTC_bf0b8.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -std=gnu99 -o CMakeFiles/cmTC_bf0b8.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-Jf95QR/CheckFunctionExists.c
-        Linking C executable cmTC_bf0b8
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf0b8.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect  -Wl,--as-needed,-rpath-link=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros  CMakeFiles/cmTC_bf0b8.dir/CheckFunctionExists.c.o -o cmTC_bf0b8
-        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-Jf95QR'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_05110/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_05110.dir/build.make CMakeFiles/cmTC_05110.dir/build
+        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-b592FO'
+        Building C object CMakeFiles/cmTC_05110.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -std=gnu99 -o CMakeFiles/cmTC_05110.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-b592FO/CheckFunctionExists.c
+        Linking C executable cmTC_05110
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05110.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect  -Wl,--as-needed,-rpath-link=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros  CMakeFiles/cmTC_05110.dir/CheckFunctionExists.c.o -o cmTC_05110
+        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-b592FO'
         
       exitCode: 0
   -
@@ -815,8 +815,8 @@ events:
     checks:
       - "Looking for remove"
     directories:
-      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-KDrqIQ"
-      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-KDrqIQ"
+      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-A23XrO"
+      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-A23XrO"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -826,17 +826,17 @@ events:
       variable: "CMAKE_HAVE_REMOVE"
       cached: true
       stdout: |
-        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-KDrqIQ'
+        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-A23XrO'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5942e/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_5942e.dir/build.make CMakeFiles/cmTC_5942e.dir/build
-        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-KDrqIQ'
-        Building C object CMakeFiles/cmTC_5942e.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -std=gnu99 -o CMakeFiles/cmTC_5942e.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-KDrqIQ/CheckFunctionExists.c
-        Linking C executable cmTC_5942e
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5942e.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove  -Wl,--as-needed,-rpath-link=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros  CMakeFiles/cmTC_5942e.dir/CheckFunctionExists.c.o -o cmTC_5942e
-        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-KDrqIQ'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e81b1/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_e81b1.dir/build.make CMakeFiles/cmTC_e81b1.dir/build
+        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-A23XrO'
+        Building C object CMakeFiles/cmTC_e81b1.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -std=gnu99 -o CMakeFiles/cmTC_e81b1.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-A23XrO/CheckFunctionExists.c
+        Linking C executable cmTC_e81b1
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e81b1.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove  -Wl,--as-needed,-rpath-link=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros  CMakeFiles/cmTC_e81b1.dir/CheckFunctionExists.c.o -o cmTC_e81b1
+        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-A23XrO'
         
       exitCode: 0
   -
@@ -848,8 +848,8 @@ events:
     checks:
       - "Looking for shmat"
     directories:
-      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-ondZ5Q"
-      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-ondZ5Q"
+      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PiVfaQ"
+      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PiVfaQ"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -859,17 +859,17 @@ events:
       variable: "CMAKE_HAVE_SHMAT"
       cached: true
       stdout: |
-        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-ondZ5Q'
+        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PiVfaQ'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_22e55/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_22e55.dir/build.make CMakeFiles/cmTC_22e55.dir/build
-        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-ondZ5Q'
-        Building C object CMakeFiles/cmTC_22e55.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -std=gnu99 -o CMakeFiles/cmTC_22e55.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-ondZ5Q/CheckFunctionExists.c
-        Linking C executable cmTC_22e55
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22e55.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat  -Wl,--as-needed,-rpath-link=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros  CMakeFiles/cmTC_22e55.dir/CheckFunctionExists.c.o -o cmTC_22e55
-        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-ondZ5Q'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_79c4d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_79c4d.dir/build.make CMakeFiles/cmTC_79c4d.dir/build
+        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PiVfaQ'
+        Building C object CMakeFiles/cmTC_79c4d.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -std=gnu99 -o CMakeFiles/cmTC_79c4d.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PiVfaQ/CheckFunctionExists.c
+        Linking C executable cmTC_79c4d
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79c4d.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat  -Wl,--as-needed,-rpath-link=/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros  CMakeFiles/cmTC_79c4d.dir/CheckFunctionExists.c.o -o cmTC_79c4d
+        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-PiVfaQ'
         
       exitCode: 0
   -
@@ -881,8 +881,8 @@ events:
     checks:
       - "Looking for IceConnectionNumber in ICE"
     directories:
-      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-P0W3lP"
-      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-P0W3lP"
+      source: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-2A2F8O"
+      binary: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-2A2F8O"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/src/teleoperate_ros/src/cmake;/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/src/teleoperate_ros/src/extern/glfw/src/CMake/modules"
@@ -890,17 +890,17 @@ events:
       variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
       cached: true
       stdout: |
-        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-P0W3lP'
+        Change Dir: '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-2A2F8O'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e95f5/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_e95f5.dir/build.make CMakeFiles/cmTC_e95f5.dir/build
-        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-P0W3lP'
-        Building C object CMakeFiles/cmTC_e95f5.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_e95f5.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-P0W3lP/CheckFunctionExists.c
-        Linking C executable cmTC_e95f5
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e95f5.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -rdynamic CMakeFiles/cmTC_e95f5.dir/CheckFunctionExists.c.o -o cmTC_e95f5  -lICE
-        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-P0W3lP'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_65c7b/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_65c7b.dir/build.make CMakeFiles/cmTC_65c7b.dir/build
+        make[1]: Entering directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-2A2F8O'
+        Building C object CMakeFiles/cmTC_65c7b.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_65c7b.dir/CheckFunctionExists.c.o -c /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-2A2F8O/CheckFunctionExists.c
+        Linking C executable cmTC_65c7b
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65c7b.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -rdynamic CMakeFiles/cmTC_65c7b.dir/CheckFunctionExists.c.o -o cmTC_65c7b  -lICE
+        make[1]: Leaving directory '/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/CMakeFiles/CMakeScratch/TryCompile-2A2F8O'
         
       exitCode: 0
 ...

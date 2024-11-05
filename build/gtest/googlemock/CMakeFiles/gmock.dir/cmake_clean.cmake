@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "../../bin/libgmock.pdb"
-  "../lib/libgmock.so"
+  "../lib/libgmock.a"
   "CMakeFiles/gmock.dir/src/gmock-all.cc.o"
   "CMakeFiles/gmock.dir/src/gmock-all.cc.o.d"
 )

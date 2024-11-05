@@ -35,6 +35,7 @@ list(APPEND CMAKE_PREFIX_PATH "/usr/local/lib/cmake/lcm")
 find_path(LCM_INCLUDE_DIR lcm/lcm.h)
 find_library(LCM_LIBRARY lcm)
 
+set(ROS_INCLUDE_DIR "/opt/ros/noetic/include/")
 set(UNITREE_SDK_INCLUDE_DIR "/usr/local/include")
 
 ## Import Unitree SDK2 library
@@ -57,6 +58,27 @@ include_directories(/usr/local/include/ddscxx)
 
 message(STATUS "Found: Threads")
 
+
+# #msg
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  geometry_msgs
+  std_msgs
+  message_generation
+)
+
+# add_message_files(
+#   FILES
+#   Rotation.msg
+# )
+
+# generate_messages(
+#   DEPENDENCIES
+#   std_msgs
+# )
+# catkin_package(
+#   CATKIN_DEPENDS roscpp geometry_msgs std_msgs message_runtime
+# )
 
 ## dds
 message(STATUS "Importing: ${DDSC_SDK_LIB}")
@@ -108,7 +130,7 @@ target_include_directories(unitree_sdk2 INTERFACE
         ${UNITREE_SDK_INCLUDE_DIR})
 
 
-add_executable(kinect_teleoperate main.cpp)
+add_executable(kinect_teleoperate  main.cpp)
 
 set_target_properties(kinect_teleoperate PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
@@ -119,7 +141,9 @@ target_include_directories(kinect_teleoperate
     ../sample_helper_includes 
     ${MuJoCo_Include_Dir}
     include/
-    ${UNITREE_SDK_INCLUDE_DIR}   
+    ${UNITREE_SDK_INCLUDE_DIR} 
+    ${ROS_INCLUDE_DIR}  
+    ${catkin_INCLUDE_DIRS}
 )
 
 # Dependencies of this library
@@ -133,5 +157,6 @@ target_link_libraries(kinect_teleoperate PRIVATE
     Eigen3::Eigen
     lcm
     unitree_sdk2
+    ${catkin_LIBRARIES}
 )
 

@@ -8,7 +8,6 @@ project(teleop LANGUAGES C CXX  VERSION 1.4)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD 99)
-
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
 
@@ -16,24 +15,50 @@ FIND_PACKAGE(k4a REQUIRED)
 FIND_PACKAGE(k4abt REQUIRED)
 
 if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Linux")
-    set(CMAKE_BUILD_RPATH "\$ORIGIN")
+set(CMAKE_BUILD_RPATH "\$ORIGIN")
 endif()
 
 # If using clang or GCC, set default visibilty to hidden
 if ("${CMAKE_C_COMPILER_ID}" STREQUAL "GNU" OR "${CMAKE_C_COMPILER_ID}" STREQUAL "Clang")
-    set(CMAKE_CXX_VISIBILITY_PRESET hidden)
-    set(CMAKE_C_VISIBILITY_PRESET hidden)
-    set(CMAKE_VISIBILITY_INLINES_HIDDEN 1)
+set(CMAKE_CXX_VISIBILITY_PRESET hidden)
+set(CMAKE_C_VISIBILITY_PRESET hidden)
+set(CMAKE_VISIBILITY_INLINES_HIDDEN 1)
 endif()
 
 # If using clang or GCC only linked shared libraries if needed
 if ("${CMAKE_C_COMPILER_ID}" STREQUAL "GNU" OR "${CMAKE_C_COMPILER_ID}" STREQUAL "Clang")
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--as-needed,-rpath-link=${CMAKE_LIBRARY_OUTPUT_DIRECTORY}")
-    set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,--as-needed,-rpath-link=${CMAKE_LIBRARY_OUTPUT_DIRECTORY}")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--as-needed,-rpath-link=${CMAKE_LIBRARY_OUTPUT_DIRECTORY}")
+set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,--as-needed,-rpath-link=${CMAKE_LIBRARY_OUTPUT_DIRECTORY}")
 endif()
+
 
 add_subdirectory(src)
 
+
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  roslib
+  geometry_msgs
+  std_msgs
+  message_generation
+)
+catkin_package(
+  CATKIN_DEPENDS roscpp std_msgs
+)
+
+# catkin_package(
+#   CATKIN_DEPENDS roscpp geometry_msgs std_msgs
+# )
+
+include_directories(
+ include ${catkin_INCLUDE_DIRS}
+)
+# add_executable(main src/kinect_teleoperate_robot/main.cpp)
+
+# target_link_libraries(main
+#   ${catkin_LIBRARIES}
+# )
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
@@ -124,8 +149,7 @@ add_subdirectory(src)
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES teleoperate_ros
+
  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
 )

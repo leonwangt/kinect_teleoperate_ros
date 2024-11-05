@@ -62,6 +62,21 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/teleop" TYPE FILE FILES "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/src/teleoperate_ros/package.xml")
 endif()
 
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros/catkin_generated/installspace/teleop.pc")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/teleop/cmake" TYPE FILE FILES
+    "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros/catkin_generated/installspace/teleopConfig.cmake"
+    "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/build/teleoperate_ros/catkin_generated/installspace/teleopConfig-version.cmake"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/teleop" TYPE FILE FILES "/home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/src/teleoperate_ros/package.xml")
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)

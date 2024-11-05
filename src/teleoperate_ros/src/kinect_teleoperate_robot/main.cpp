@@ -44,6 +44,13 @@ constexpr float kPi_2 = 1.57079632;
 // For retargeting function from the skeleton joint angles to the robot motor joint angles.
 #include "jointRetargeting.hpp"
 
+#include <Eigen/Geometry>
+#include <ros/ros.h>
+#include <geometry_msgs/Transform.h>
+#include <std_msgs/Float32MultiArray.h>
+// #include </home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/src/teleoperate_ros/src/kinect_teleoperate_robot/msg/Rotation.msg>
+
+
 using namespace std::chrono;
 
 bool s_isRunning = true;
@@ -80,6 +87,11 @@ struct hardware_control_signal {
     float right_shoulder_yaw = 0.0;
     float left_elbow_yaw = 0.0;
     float right_elbow_yaw = 0.0;
+};
+
+struct Rotation {
+    Eigen::Vector3d axis; // 旋转轴 (例如 (1,0,0) 表示 X 轴)
+    double angle;         // 旋转角度（弧度）
 };
 
 enum JointIndex {
@@ -491,10 +503,20 @@ void MujocoRender_loop() {
 #endif
 
 #endif
-
+            Eigen::Matrix3d calculateFinalRotationMatrix(const std::vector<Rotation>& rotations) {
+                Eigen::Matrix3d rotation_matrix = Eigen::Matrix3d::Identity(); // 初始化为单位矩阵
+                for (const auto& rot : rotations) {
+                    // 使用旋转轴和角度构造单个旋转矩阵
+                    Eigen::Matrix3d single_rotation = Eigen::AngleAxisd(rot.angle, rot.axis).toRotationMatrix();
+                    
+                    // 累积旋转矩阵
+                    rotation_matrix *= single_rotation;
+                }
+                return rotation_matrix;
+            }
 /*****************************************************Control Smooth and Transfer*****************************************************************/
 void Control_loop(std::shared_ptr<unitree::robot::ChannelPublisher<unitree_go::msg::dds_::LowCmd_>> arm_sdk_publisher,
-    unitree_go::msg::dds_::LowCmd_ &msg) {
+    unitree_go::msg::dds_::LowCmd_ &msg, ros::Publisher& rotation_pub_left, ros::Publisher& rotation_pub_right) {
 // void Control_loop() {
     std::cout<<"control loop start..."<<std::endl;
     int left_shoulder_roll_joint_id = mj_name2id(m, mjOBJ_ACTUATOR, "left_shoulder_roll_joint");
@@ -614,6 +636,66 @@ void Control_loop(std::shared_ptr<unitree::robot::ChannelPublisher<unitree_go::m
                 H1_hardware_signal.right_shoulder_roll,
                 H1_hardware_signal.right_shoulder_yaw,
                 H1_hardware_signal.right_elbow_yaw}; 
+
+
+            std::vector<Rotation> rotations_left = {
+                    {Eigen::Vector3d(1, 0, 0), 0.43633}, // 绕X轴旋转0.43633弧度
+                    {Eigen::Vector3d(0, 1, 0), H1_hardware_signal.left_shoulder_pitch},  // 绕Y轴旋转
+                    {Eigen::Vector3d(1, 0, 0), -0.43633}, // 反向绕X轴旋转0.43633弧度
+                    {Eigen::Vector3d(1, 0, 0), H1_hardware_signal.left_shoulder_roll},  // 绕Z轴旋转
+                    {Eigen::Vector3d(0, 0, 1), H1_hardware_signal.left_shoulder_yaw},  // 绕Z轴旋转0.5236弧度（30度）
+                    {Eigen::Vector3d(0, 1, 0), H1_hardware_signal.left_elbow_yaw},  // 胳膊肘到底是y还是z
+                    
+                };
+
+            std::vector<Rotation> rotations_right = {
+                    {Eigen::Vector3d(1, 0, 0), -0.43633},// 反向绕X轴旋转0.43633弧度
+                    {Eigen::Vector3d(0, 1, 0), H1_hardware_signal.right_shoulder_pitch},  // 绕Y轴旋转
+                    {Eigen::Vector3d(1, 0, 0), 0.43633}, // 绕X轴旋转0.43633弧度
+                    {Eigen::Vector3d(1, 0, 0), H1_hardware_signal.right_shoulder_roll},  // 绕Z轴旋转
+                    {Eigen::Vector3d(0, 0, 1), H1_hardware_signal.right_shoulder_yaw},  // 绕Z轴旋转0.5236弧度（30度）
+                    {Eigen::Vector3d(0, 1, 0), H1_hardware_signal.right_elbow_yaw},  // 胳膊肘到底是y还是z
+
+
+                    
+                };
+                Eigen::Matrix3d left_rotation_matrix = calculateFinalRotationMatrix(rotations_left);
+                Eigen::Matrix3d right_rotation_matrix = calculateFinalRotationMatrix(rotations_right);  
+
+                std::cout << "左臂旋转矩阵:\n" << left_rotation_matrix << std::endl;
+                std::cout << "右臂旋转矩阵:\n" << right_rotation_matrix << std::endl;
+
+
+                while (ros::ok()) {
+                Eigen::Matrix3d rotation_matrix_left = calculateFinalRotationMatrix(rotations_left);
+                Eigen::Matrix3d rotation_matrix_right = calculateFinalRotationMatrix(rotations_right);
+
+                // Publish left rotation matrix
+                std_msgs::Float32MultiArray rotation_msg_left;
+                rotation_msg_left.data.reserve(9);
+                for (int i = 0; i < 3; ++i) {
+                    for (int j = 0; j < 3; ++j) {
+                        rotation_msg_left.data.push_back(rotation_matrix_left(i, j));
+                    }
+                }
+                rotation_pub_left.publish(rotation_msg_left);
+
+                // Publish right rotation matrix
+                std_msgs::Float32MultiArray rotation_msg_right;
+                rotation_msg_right.data.reserve(9);
+                for (int i = 0; i < 3; ++i) {
+                    for (int j = 0; j < 3; ++j) {
+                        rotation_msg_right.data.push_back(rotation_matrix_right(i, j));
+                    }
+                }
+                rotation_pub_right.publish(rotation_msg_right);
+                
+                break;
+
+
+               
+                 }
+            
 
 
             // set weight
@@ -912,6 +994,13 @@ int main(int argc, char const *argv[])
     const char* model_path = "../src/teleoperate_ros/src/unitree_h1/mjcf/scene.xml"; 
     #endif
 
+    ros::init(argc, const_cast<char**>(argv), "control_node");
+    ros::NodeHandle nh;
+
+    ros::Publisher rotation_pub_left = nh.advertise<std_msgs::Float32MultiArray>("left_arm_rotation_matrix", 10);
+    ros::Publisher rotation_pub_right = nh.advertise<std_msgs::Float32MultiArray>("right_arm_rotation_matrix", 10);
+
+
     if (argc < 2) {
     std::cout << "Usage: " << argv[0] << " networkInterface" << std::endl;
     exit(-1);
@@ -937,7 +1026,8 @@ int main(int argc, char const *argv[])
     mj_resetData(m, d);
 
     // std::thread control_thread(Control_loop);
-    std::thread control_thread(std::bind(Control_loop, arm_sdk_publisher, std::ref(msg)));
+    std::thread control_thread(std::bind(Control_loop, arm_sdk_publisher, std::ref(msg), std::ref(rotation_pub_left), 
+    std::ref(rotation_pub_right)));
     std::thread mujocoRender_thread(MujocoRender_loop);
 
     Main_loop();
