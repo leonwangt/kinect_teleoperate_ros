@@ -29,11 +29,11 @@ link_directories(
     ${hx_idl_cpp_Include_Dir}
 )
 
-list(APPEND CMAKE_PREFIX_PATH "/usr/local/lib/cmake/lcm")
+# list(APPEND CMAKE_PREFIX_PATH "/usr/local/lib/cmake/lcm")
 # list(APPEND CMAKE_PREFIX_PATH "/usr/local/lib")
 # list(APPEND CMAKE_PREFIX_PATH "/usr/local/include")
-find_path(LCM_INCLUDE_DIR lcm/lcm.h)
-find_library(LCM_LIBRARY lcm)
+# find_path(LCM_INCLUDE_DIR lcm/lcm.h)
+# find_library(LCM_LIBRARY lcm)
 
 set(ROS_INCLUDE_DIR "/opt/ros/noetic/include/")
 set(UNITREE_SDK_INCLUDE_DIR "/usr/local/include")
@@ -155,7 +155,7 @@ target_link_libraries(kinect_teleoperate PRIVATE
     glfw::glfw
     ${MuJoCo_Libraries}
     Eigen3::Eigen
-    lcm
+    # lcm
     unitree_sdk2
     ${catkin_LIBRARIES}
 )

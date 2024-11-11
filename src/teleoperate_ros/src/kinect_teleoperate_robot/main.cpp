@@ -25,7 +25,7 @@
 #include <mujoco/mujoco.h>
 #include <GLFW/glfw3.h>
 
-#include <lcm/lcm-cpp.hpp>
+// #include <lcm/lcm-cpp.hpp>
 // #include "unitree_h1_lcm.hpp"
 
 
