@@ -18,6 +18,8 @@
 #include <string>
 #include <memory>
 #include <functional>
+#include <limits>
+#include <atomic>
 
 // For mujoco render
 #include <mujoco/mujoco.h>
@@ -317,7 +319,8 @@ void renderSkeletonAndPointCloud(k4abt_frame_t bodyFrame, Window3dWrapper &kinec
 
 void KinectRender_loop(k4a_calibration_t sensorCalibration) {
     std::cout<<"Kinect Render loop start..."<<std::endl;
-    std::cout<<"Please use the wake-up action to start or stop the TeleOperation..."<<std::endl;
+    std::cout<<"Please press key [s] to start or [e] end the contorl loop   in kinect winndow..."<<std::endl;
+    std::cout<<"If want init pose please in kinect window press Ese!..."<<std::endl;
     Window3dWrapper kinectRenderWindow;
     kinectRenderWindow.Create("Kinect Render", sensorCalibration);
     kinectRenderWindow.SetCloseCallback(CloseCallback);
@@ -516,7 +519,7 @@ void MujocoRender_loop() {
             }
 /*****************************************************Control Smooth and Transfer*****************************************************************/
 void Control_loop(std::shared_ptr<unitree::robot::ChannelPublisher<unitree_go::msg::dds_::LowCmd_>> arm_sdk_publisher,
-    unitree_go::msg::dds_::LowCmd_ &msg, ros::Publisher& rotation_pub_left, ros::Publisher& rotation_pub_right) {
+    unitree_go::msg::dds_::LowCmd_ &msg, ros::Publisher& rotation_pub_left, ros::Publisher& rotation_pub_right, std::atomic<bool>& is_active) {
 // void Control_loop() {
     std::cout<<"control loop start..."<<std::endl;
     int left_shoulder_roll_joint_id = mj_name2id(m, mjOBJ_ACTUATOR, "left_shoulder_roll_joint");
@@ -536,7 +539,7 @@ void Control_loop(std::shared_ptr<unitree::robot::ChannelPublisher<unitree_go::m
     int torso_joint_id = mj_name2id(m, mjOBJ_ACTUATOR, "torso_joint");
     #endif
     
-    mj_step(m, d); // For starting render mujoco
+    mj_step(m, d); // For starting render mujoco——
 
     MovingAverageFilter ls_r_filter,ls_p_filter,ls_y_filter,
                         rs_r_filter,rs_p_filter,rs_y_filter,
@@ -561,12 +564,81 @@ void Control_loop(std::shared_ptr<unitree::robot::ChannelPublisher<unitree_go::m
         double spine_chest_torso = SC_mappingCameraPitch2RobotTorso(sc_p);
         #endif
 
-        bool start = pose_detector.isStartEndPose(left_shoulder_roll, left_shoulder_pitch, left_shoulder_yaw,
-                                                  right_shoulder_roll, right_shoulder_pitch, right_shoulder_yaw,
-                                                  left_elbow_yaw, right_elbow_yaw);
-        if(start)
+        // bool start = pose_detector.isStartEndPose(left_shoulder_roll, left_shoulder_pitch, left_shoulder_yaw,
+        //                                           right_shoulder_roll, right_shoulder_pitch, right_shoulder_yaw,
+        //                                           left_elbow_yaw, right_elbow_yaw);
+
+        // bool start = is_active;
+
+
+        // std::cout << "left_shoulder_roll: " << left_shoulder_roll << std::endl;
+        // std::cout << "left_shoulder_pitch: " << left_shoulder_pitch << std::endl;
+        // std::cout << "left_shoulder_yaw: " << left_shoulder_yaw << std::endl;
+        // std::cout << "left_elbow_yaw: " << left_elbow_yaw << std::endl;
+
+        // float max_roll = std::numeric_limits<float>::lowest();
+        // float min_roll = std::numeric_limits<float>::max();
+        // float max_pitch = std::numeric_limits<float>::lowest();
+        // float min_pitch = std::numeric_limits<float>::max();
+        // float max_yaw = std::numeric_limits<float>::lowest();
+        // float min_yaw = std::numeric_limits<float>::max();
+        // float max_elbow_yaw = std::numeric_limits<float>::lowest();
+        // float min_elbow_yaw = std::numeric_limits<float>::max();
+
+        // if (right_shoulder_roll > max_roll) max_roll = right_shoulder_roll;
+        // if (right_shoulder_roll < min_roll) min_roll = right_shoulder_roll;
+        // if (right_shoulder_pitch > max_pitch) max_pitch = right_shoulder_pitch;
+        // if (right_shoulder_pitch < min_pitch) min_pitch = right_shoulder_pitch;
+        // if (right_shoulder_yaw > max_yaw) max_yaw = right_shoulder_yaw;
+        // if (right_shoulder_yaw < min_yaw) min_yaw = right_shoulder_yaw;
+        // if (right_elbow_yaw > max_elbow_yaw) max_elbow_yaw = right_elbow_yaw;
+        // if (right_elbow_yaw < min_elbow_yaw) min_elbow_yaw = right_elbow_yaw;
+
+        // std::cout << "Max right_shoulder_roll: " << max_roll << std::endl;
+        // std::cout << "Min right_shoulder_roll: " << min_roll << std::endl;
+        // std::cout << "Max right_shoulder_pitch: " << max_pitch << std::endl;
+        // std::cout << "Min right_shoulder_pitch: " << min_pitch << std::endl;
+        // std::cout << "Max right_shoulder_yaw: " << max_yaw << std::endl;
+        // std::cout << "Min right_shoulder_yaw: " << min_yaw << std::endl;
+        // std::cout << "Max right_elbow_yaw: " << max_elbow_yaw << std::endl;
+        // std::cout << "Min right_elbow_yaw: " << min_elbow_yaw << std::endl;
+
+        // //=====================================================================//
+        // float max_roll = std::numeric_limits<float>::lowest();
+        // float min_roll = std::numeric_limits<float>::max();
+        // float max_pitch = std::numeric_limits<float>::lowest();
+        // float min_pitch = std::numeric_limits<float>::max();
+        // float max_yaw = std::numeric_limits<float>::lowest();
+        // float min_yaw = std::numeric_limits<float>::max();
+        // float max_elbow_yaw = std::numeric_limits<float>::lowest();
+        // float min_elbow_yaw = std::numeric_limits<float>::max();
+
+        // if (left_shoulder_roll > max_roll) max_roll = left_shoulder_roll;
+        // if (left_shoulder_roll < min_roll) min_roll = left_shoulder_roll;
+        // if (left_shoulder_pitch > max_pitch) max_pitch = left_shoulder_pitch;
+        // if (left_shoulder_pitch < min_pitch) min_pitch = left_shoulder_pitch;
+        // if (left_shoulder_yaw > max_yaw) max_yaw = left_shoulder_yaw;
+        // if (left_shoulder_yaw < min_yaw) min_yaw = left_shoulder_yaw;
+        // if (left_elbow_yaw > max_elbow_yaw) max_elbow_yaw = left_elbow_yaw;
+        // if (left_elbow_yaw < min_elbow_yaw) min_elbow_yaw = left_elbow_yaw;
+
+        // std::cout << "Max left_shoulder_roll: " << max_roll << std::endl;
+        // std::cout << "Min left_shoulder_roll: " << min_roll << std::endl;
+        // std::cout << "Max left_shoulder_pitch: " << max_pitch << std::endl;
+        // std::cout << "Min left_shoulder_pitch: " << min_pitch << std::endl;
+        // std::cout << "Max left_shoulder_yaw: " << max_yaw << std::endl;
+        // std::cout << "Min left_shoulder_yaw: " << min_yaw << std::endl;
+        // std::cout << "Max left_elbow_yaw: " << max_elbow_yaw << std::endl;
+        // std::cout << "Min left_elbow_yaw: " << min_elbow_yaw << std::endl;        
+
+        // std::cout << "right_shoulder_roll: " << right_shoulder_roll << std::endl;
+        // std::cout << "right_shoulder_pitch: " << right_shoulder_pitch << std::endl;
+        // std::cout << "right_shoulder_yaw: " << right_shoulder_yaw << std::endl;
+        // std::cout << "right_elbow_yaw: " << right_elbow_yaw << std::endl;
+
+        if(is_active.load())
         {
-            // smoothing
+            // smoothing-----------math_tool//
             left_shoulder_roll = ls_r_filter.update(left_shoulder_roll);
             left_shoulder_pitch = ls_p_filter.update(left_shoulder_pitch);
             left_shoulder_yaw = ls_y_filter.update(left_shoulder_yaw);
@@ -662,11 +734,11 @@ void Control_loop(std::shared_ptr<unitree::robot::ChannelPublisher<unitree_go::m
                 Eigen::Matrix3d left_rotation_matrix = calculateFinalRotationMatrix(rotations_left);
                 Eigen::Matrix3d right_rotation_matrix = calculateFinalRotationMatrix(rotations_right);  
 
-                std::cout << "左臂旋转矩阵:\n" << left_rotation_matrix << std::endl;
-                std::cout << "右臂旋转矩阵:\n" << right_rotation_matrix << std::endl;
+                // std::cout << "左臂旋转矩阵:\n" << left_rotation_matrix << std::endl;
+                // std::cout << "右臂旋转矩阵:\n" << right_rotation_matrix << std::endl;
 
 
-                while (ros::ok()) {
+            while (ros::ok()) {
                 Eigen::Matrix3d rotation_matrix_left = calculateFinalRotationMatrix(rotations_left);
                 Eigen::Matrix3d rotation_matrix_right = calculateFinalRotationMatrix(rotations_right);
 
@@ -688,16 +760,12 @@ void Control_loop(std::shared_ptr<unitree::robot::ChannelPublisher<unitree_go::m
                         rotation_msg_right.data.push_back(rotation_matrix_right(i, j));
                     }
                 }
-                rotation_pub_right.publish(rotation_msg_right);
+                rotation_pub_right.publish(rotation_msg_right);   
                 
+                // ros::spinOnce(); 
                 break;
-
-
-               
-                 }
+            }
             
-
-
             // set weight
             msg.motor_cmd().at(JointIndex::kNotUsedJoint).q(1);
 
@@ -720,76 +788,13 @@ void Control_loop(std::shared_ptr<unitree::robot::ChannelPublisher<unitree_go::m
                 // std::cout << "***********current pos " << j << "*********" << current_jpos_des.at(j) <<  std::endl;
                 // std::cout << "***********current pos " << j << "*********" << current_jpos_des.at(j) <<  std::endl;
                 // std::cout << "***********current pos " << 5 << "*********" << current_jpos_des.at(5) <<  std::endl;
-                std::cout << "***********current pos " << "*********" << left_shoulder_yaw<<  std::endl;
+                // std::cout << "***********current pos " << "*********" << left_shoulder_yaw<<  std::endl;
 
             }
                 
             arm_sdk_publisher->Write(msg);
 
-
-
-
             std::this_thread::sleep_for(sleep_time);
-            /*--------------------------*/
-
-                // if()
-                // for (int size_t i = 0; i < current_pos.size(); ++i) {
-                //     last_pos[i] = current_pos[i];
-                // }
-
-            /*-------------------------*/
-
-            //===============================================================================//
-            // Test for arm control
-            //===============================================================================//
-            // // lift arms up
-            // if (!is_arm_lifted_up)
-            // {
-            //     for (int j = 0; j < init_pos.size(); ++j) {
-            //         current_jpos_des.at(j) +=
-            //             std::clamp(target_pos.at(j) - init_pos.at(j),
-            //                         -max_joint_delta, max_joint_delta);
-
-            //         // set control joints
-            //         for (int j = 0; j < init_pos.size(); ++j) {
-            //             msg.motor_cmd().at(arm_joints.at(j)).q(current_jpos_des.at(j));
-            //             msg.motor_cmd().at(arm_joints.at(j)).dq(dq);
-            //             msg.motor_cmd().at(arm_joints.at(j)).kp(kp);
-            //             msg.motor_cmd().at(arm_joints.at(j)).kd(kd);
-            //             msg.motor_cmd().at(arm_joints.at(j)).tau(tau_ff);
-            //         }
-            //     }
-                
-            //     arm_sdk_publisher->Write(msg);
-
-            //     if (target_pos.at(1) - current_jpos_des.at(1) <= 0.0001) {
-            //         is_arm_lifted_up = true;
-            //     }
-            //     std::cout << "***********arm lifting*********" << std::endl;
-
-
-            // }else{
-            //     for (int j = 0; j < init_pos.size(); ++j) {
-            //         current_jpos_des.at(j) +=
-            //             std::clamp(init_pos.at(j) - current_jpos_des.at(j),
-            //                         -max_joint_delta, max_joint_delta);
-
-            //         // set control joints
-            //         for (int j = 0; j < init_pos.size(); ++j) {
-            //             msg.motor_cmd().at(arm_joints.at(j)).q(current_jpos_des.at(j));
-            //             msg.motor_cmd().at(arm_joints.at(j)).dq(dq);
-            //             msg.motor_cmd().at(arm_joints.at(j)).kp(kp);
-            //             msg.motor_cmd().at(arm_joints.at(j)).kd(kd);
-            //             msg.motor_cmd().at(arm_joints.at(j)).tau(tau_ff);
-            //         }
-            //     }
-
-            //     arm_sdk_publisher->Write(msg);
-
-            //     std::cout << "***********arm down*********" << std::endl;
-
-            // }
-
 
             #if EchoFrequency
             time_point<high_resolution_clock> ctrl_end = high_resolution_clock::now();
@@ -984,8 +989,25 @@ void Main_loop(){
 }
 
 
+void captureInput(std::atomic<bool>& is_active) {
+    char input;
+    while (true) {
+        std::cin >> input;
+        if (input == 's') {
+            is_active.store(true);
+            std::cout << "start the procseee" << std::endl;
+        } else if (input == 'e') {
+            is_active.store(false);
+            std::cout << "end the process" << std::endl;
+        }
+    }
+}
+
+
 int main(int argc, char const *argv[])
 {
+
+    std::atomic<bool> is_active(false);
 
     #if Control_G1
     const char* model_path = "../src/unitree_g1/scene.xml";
@@ -996,7 +1018,6 @@ int main(int argc, char const *argv[])
 
     ros::init(argc, const_cast<char**>(argv), "control_node");
     ros::NodeHandle nh;
-
     ros::Publisher rotation_pub_left = nh.advertise<std_msgs::Float32MultiArray>("left_arm_rotation_matrix", 10);
     ros::Publisher rotation_pub_right = nh.advertise<std_msgs::Float32MultiArray>("right_arm_rotation_matrix", 10);
 
@@ -1026,14 +1047,17 @@ int main(int argc, char const *argv[])
     mj_resetData(m, d);
 
     // std::thread control_thread(Control_loop);
-    std::thread control_thread(std::bind(Control_loop, arm_sdk_publisher, std::ref(msg), std::ref(rotation_pub_left), 
-    std::ref(rotation_pub_right)));
+    std::thread control_thread(Control_loop, arm_sdk_publisher, std::ref(msg), 
+                            std::ref(rotation_pub_left), std::ref(rotation_pub_right), 
+                            std::ref(is_active));
     std::thread mujocoRender_thread(MujocoRender_loop);
+    std::thread input_thread(captureInput, std::ref(is_active));
 
     Main_loop();
 
     control_thread.join();
     mujocoRender_thread.join();
+    input_thread.detach();
 
     int sstep = int(5/control_dt);
     for (int i = 0; i < sstep; ++i) {
@@ -1051,7 +1075,8 @@ int main(int argc, char const *argv[])
                 msg.motor_cmd().at(arm_joints.at(j)).kd(kd);
                 msg.motor_cmd().at(arm_joints.at(j)).tau(tau_ff);
             }
-            std::cout << "***********current pos " << j << "*********" << current_jpos_des.at(j) <<  std::endl;
+
+            // std::cout << "***********current pos " << j << "*********" << current_jpos_des.at(j)"*************" <<  std::endl;
         }
         arm_sdk_publisher->Write(msg);
         std::this_thread::sleep_for(sleep_time);

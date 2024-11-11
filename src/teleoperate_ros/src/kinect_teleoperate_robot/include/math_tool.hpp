@@ -12,7 +12,7 @@
 
 class MovingAverageFilter {
 public:
-    MovingAverageFilter(size_t max_size = 8, double epsilon = 1e-9) 
+    MovingAverageFilter(size_t max_size = 5, double epsilon = 1e-9) 
         : max_size_(max_size), epsilon_(epsilon), sum_(0.0) {
         if (max_size == 0) {
             throw std::invalid_argument("max_size must be greater than 0");

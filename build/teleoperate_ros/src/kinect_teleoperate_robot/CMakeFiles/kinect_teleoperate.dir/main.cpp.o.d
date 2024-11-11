@@ -223,7 +223,7 @@ teleoperate_ros/src/kinect_teleoperate_robot/CMakeFiles/kinect_teleoperate.dir/m
  /usr/include/c++/9/bits/stl_algo.h \
  /usr/include/c++/9/bits/algorithmfwd.h \
  /usr/include/c++/9/bits/stl_heap.h \
- /usr/include/c++/9/bits/uniform_int_dist.h \
+ /usr/include/c++/9/bits/uniform_int_dist.h /usr/include/c++/9/atomic \
  /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/src/teleoperate_ros/src/kinect_teleoperate_robot/../mujoco-3.1.5/include/mujoco/mujoco.h \
  /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/src/teleoperate_ros/src/kinect_teleoperate_robot/../mujoco-3.1.5/include/mujoco/mjexport.h \
  /usr/include/c++/9/stdlib.h \
@@ -244,8 +244,7 @@ teleoperate_ros/src/kinect_teleoperate_robot/CMakeFiles/kinect_teleoperate.dir/m
  /usr/local/include/unitree/idl/go2/BmsCmd_.hpp \
  /usr/local/include/ddscxx/dds/topic/TopicTraits.hpp \
  /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/datatopic.hpp \
- /usr/include/c++/9/atomic /usr/local/include/dds/ddsrt/md5.h \
- /usr/local/include/dds/export.h \
+ /usr/local/include/dds/ddsrt/md5.h /usr/local/include/dds/export.h \
  /usr/local/include/ddscxx/org/eclipse/cyclonedds/core/cdr/basic_cdr_ser.hpp \
  /usr/local/include/ddscxx/org/eclipse/cyclonedds/core/cdr/cdr_stream.hpp \
  /usr/local/include/dds/ddsrt/endian.h \

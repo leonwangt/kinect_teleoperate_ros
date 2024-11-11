@@ -21,13 +21,16 @@ public:
             auto elapsed_time = duration_cast<microseconds>(now - last_check_time).count();
             last_check_time = now;
 
-            bool in_range = (ls_r > -0.5 && ls_r < 0.5) && (ls_p > -0.5 && ls_p < 0.5) && (ls_y > -0.5 && ls_y < 0.5) &&
-                            (rs_r > -0.5 && rs_r < 0.5) && (rs_p > -0.5 && rs_p < 0.5) && (rs_y > -0.5 && rs_y < 0.5) &&
-                            (le_y > -0.5 && le_y < 0.5) && (re_y > -0.5 && re_y < 0.5);
+            // bool in_range = (ls_r > -0.7 && ls_r < 0.7) && (ls_p > -0.7 && ls_p < 0.7) && (ls_y > -0.7 && ls_y < 0.7) &&
+            //                 (rs_r > -0.7 && rs_r < 0.7) && (rs_p > -0.7 && rs_p < 0.7) && (rs_y > -0.7 && rs_y < 0.7) &&
+            //                 (le_y > -0.7 && le_y < 0.7) && (re_y > -0.7 && re_y < 0.7);
 
+            bool in_range = (ls_r > -0.7 && ls_r < 0.7) && (ls_p > -1.f && ls_p < 1.f) && (ls_y > -0.7 && ls_y < 0.7) &&
+                            (rs_r > -0.7 && rs_r < 0.7) && (rs_p > -1.f && rs_p < 1.f) && (rs_y > -0.7 && rs_y < 0.7) &&
+                            (le_y > -1.f && le_y < 1.f) && (re_y > -1.f && re_y < 1.f);
             if (in_range) {
                 pose_duration += elapsed_time;
-                if (pose_duration > 3000000) {
+                if (pose_duration > 5000000) {
                     flipState();
                 }
             } else {
