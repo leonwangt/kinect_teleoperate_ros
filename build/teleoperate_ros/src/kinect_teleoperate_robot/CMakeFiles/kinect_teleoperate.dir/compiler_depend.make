@@ -1931,12 +1931,6 @@ teleoperate_ros/src/kinect_teleoperate_robot/CMakeFiles/kinect_teleoperate.dir/m
   /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/find.hpp \
   /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/hash.hpp \
   /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/qos/TopicQosDelegate.hpp \
-  /usr/local/include/lcm/eventlog.h \
-  /usr/local/include/lcm/lcm-cpp-impl.hpp \
-  /usr/local/include/lcm/lcm-cpp.hpp \
-  /usr/local/include/lcm/lcm.h \
-  /usr/local/include/lcm/lcm_export.h \
-  /usr/local/include/lcm/lcm_version.h \
   /usr/local/include/unitree/common/any.hpp \
   /usr/local/include/unitree/common/block_queue.hpp \
   /usr/local/include/unitree/common/dds/dds_callback.hpp \
@@ -2025,14 +2019,6 @@ teleoperate_ros/src/kinect_teleoperate_robot/CMakeFiles/kinect_teleoperate.dir/m
 /usr/local/include/unitree/common/dds/dds_callback.hpp:
 
 /usr/local/include/unitree/common/any.hpp:
-
-/usr/local/include/lcm/lcm_version.h:
-
-/usr/local/include/lcm/lcm_export.h:
-
-/usr/local/include/lcm/lcm-cpp.hpp:
-
-/usr/local/include/lcm/eventlog.h:
 
 /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/hash.hpp:
 
@@ -3592,8 +3578,6 @@ teleoperate_ros/src/kinect_teleoperate_robot/CMakeFiles/kinect_teleoperate.dir/m
 
 /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h:
 
-/usr/local/include/lcm/lcm-cpp-impl.hpp:
-
 /usr/include/boost/preprocessor/seq/transform.hpp:
 
 /usr/include/boost/preprocessor/list/adt.hpp:
@@ -4345,8 +4329,6 @@ teleoperate_ros/src/kinect_teleoperate_robot/CMakeFiles/kinect_teleoperate.dir/m
 /usr/include/boost/limits.hpp:
 
 /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h:
-
-/usr/local/include/lcm/lcm.h:
 
 /usr/include/boost/math/policies/error_handling.hpp:
 

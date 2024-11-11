@@ -1932,12 +1932,6 @@ teleoperate_ros/src/kinect_teleoperate_robot/CMakeFiles/kinect_teleoperate.dir/m
  /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/find.hpp
  /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/hash.hpp
  /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/qos/TopicQosDelegate.hpp
- /usr/local/include/lcm/eventlog.h
- /usr/local/include/lcm/lcm-cpp-impl.hpp
- /usr/local/include/lcm/lcm-cpp.hpp
- /usr/local/include/lcm/lcm.h
- /usr/local/include/lcm/lcm_export.h
- /usr/local/include/lcm/lcm_version.h
  /usr/local/include/unitree/common/any.hpp
  /usr/local/include/unitree/common/block_queue.hpp
  /usr/local/include/unitree/common/dds/dds_callback.hpp

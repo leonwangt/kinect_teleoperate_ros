@@ -236,10 +236,6 @@ teleoperate_ros/src/kinect_teleoperate_robot/CMakeFiles/kinect_teleoperate.dir/m
  /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/src/teleoperate_ros/src/kinect_teleoperate_robot/../mujoco-3.1.5/include/mujoco/mjvisualize.h \
  /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/src/teleoperate_ros/src/kinect_teleoperate_robot/../mujoco-3.1.5/include/mujoco/mjrender.h \
  /home/wang/Desktop/Unitree_H1/kinect_teleoperate_ros/src/teleoperate_ros/src/kinect_teleoperate_robot/../mujoco-3.1.5/include/mujoco/mjui.h \
- /usr/local/include/lcm/lcm-cpp.hpp /usr/local/include/lcm/lcm.h \
- /usr/local/include/lcm/lcm_version.h /usr/local/include/lcm/lcm_export.h \
- /usr/local/include/lcm/eventlog.h \
- /usr/local/include/lcm/lcm-cpp-impl.hpp \
  /usr/local/include/unitree/idl/go2/LowCmd_.hpp \
  /usr/local/include/unitree/idl/go2/BmsCmd_.hpp \
  /usr/local/include/ddscxx/dds/topic/TopicTraits.hpp \
